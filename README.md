@@ -1,8 +1,9 @@
 
 <!-- README.md is generated from README.Rmd. Make sure to edit the .Rmd file and not the .md -->
-<!--<img src='https://github.com/phylotastic/datelife/raw/master/man/figures/datelife-hexsticker-ai.png' align='right' style='width:150px' />
+<!-- <img src='https://github.com/phylotastic/datelife/raw/master/man/figures/datelife-hexsticker-ai.png' align='right' style='width:150px' />
 
-[![CRAN status](https://www.r-pkg.org/badges/version/datelife)](https://CRAN.R-project.org/package=datelife)-->
+[![CRAN status](https://www.r-pkg.org/badges/version/datelife)](https://CRAN.R-project.org/package=datelife)
+-->
 
 ![GitHub R package
 version](https://img.shields.io/github/r-package/v/phylotastic/OpenTreeChronograms?color=green&label=GitHub)

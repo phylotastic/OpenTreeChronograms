@@ -19,9 +19,11 @@ if (!requireNamespace("versions")) {
 }
 ```
 
-<!--<img src='https://github.com/phylotastic/datelife/raw/master/man/figures/datelife-hexsticker-ai.png' align='right' style='width:150px' />
+<!-- <img src='https://github.com/phylotastic/datelife/raw/master/man/figures/datelife-hexsticker-ai.png' align='right' style='width:150px' />
 
-[![CRAN status](https://www.r-pkg.org/badges/version/datelife)](https://CRAN.R-project.org/package=datelife)-->
+[![CRAN status](https://www.r-pkg.org/badges/version/datelife)](https://CRAN.R-project.org/package=datelife)
+-->
+
 ![GitHub R package version](https://img.shields.io/github/r-package/v/phylotastic/OpenTreeChronograms?color=green&label=GitHub)
 [![R-CMD-check](https://github.com/phylotastic/OpenTreeChronograms/workflows/R-CMD-check/badge.svg)](https://github.com/phylotastic/OpenTreeChronograms/actions)
 [![codecov](https://codecov.io/gh/phylotastic/datelife/branch/master/graph/badge.svg)](https://app.codecov.io/gh/phylotastic/OpenTreeChronograms)
