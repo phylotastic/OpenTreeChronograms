@@ -12,7 +12,7 @@ version](https://img.shields.io/github/r-package/v/phylotastic/OpenTreeChronogra
 [![Github Open
 Issues](https://img.shields.io/github/issues-raw/phylotastic/OpenTreeChronograms.svg)](https://github.com/phylotastic/OpenTreeChronograms/issues)
 [![Github Closed
-Issues](https://img.shields.io/github/issues-closed-raw/phylotastic/datelife.svg)](https://github.com/phylotastic/OpenTreeChronograms/issues?q=is%3Aissue+is%3Aclosed)
+Issues](https://img.shields.io/github/issues-closed-raw/phylotastic/OpenTreeChronograms.svg)](https://github.com/phylotastic/OpenTreeChronograms/issues?q=is%3Aissue+is%3Aclosed)
 [![DOI](https://zenodo.org/badge/23036/phylotastic/OpenTreeChronograms.svg)](https://zenodo.org/badge/latestdoi/23036/phylotastic/OpenTreeChronograms)
 [![NSF-1458603](https://img.shields.io/badge/NSF-1458603-white.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1458603)
 [![NSF-0905606](https://img.shields.io/badge/NSF-0905606-white.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=0905606)
