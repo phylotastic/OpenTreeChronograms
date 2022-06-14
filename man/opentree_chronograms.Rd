@@ -16,8 +16,8 @@ to the Open Tree of Life database.}
 Life database.}
 \item{update}{A character vector indicating the time when the database object
 was last updated.}
-\item{version}{A character vector indicating the date
-when the R database was last updated from OpenTree's database.}
+\item{version}{A character vector indicating when the chronogram database \code{opentree_chronograms}
+object was last updated. Format is year.month.day}
 }
 }
 \source{
@@ -34,7 +34,7 @@ Generated with
 devtools::install_github("ropensci/rotl", ref = devtools::github_pull("137"))
 remotes::install_github("ROpenSci/bibtex")'
 opentree_chronograms <- get_opentree_chronograms()
-opentree_chronograms$update <- Sys.time()
+opentree_chronograms$update_time <- Sys.time()
 opentree_chronograms$version <- format(Sys.time(), "\%Y.\%m.\%d")
 usethis::use_data(opentree_chronograms, overwrite = T, compress="xz")
 and updated with update_datelife_cache()

@@ -1,9 +1,8 @@
 
 <!-- README.md is generated from README.Rmd. Make sure to edit the .Rmd file and not the .md -->
+<!--<img src='https://github.com/phylotastic/datelife/raw/master/man/figures/datelife-hexsticker-ai.png' align='right' style='width:150px' />
 
-<img src='https://github.com/phylotastic/datelife/raw/master/man/figures/datelife-hexsticker-ai.png' align='right' style='width:150px' />
-
-<!--[![CRAN status](https://www.r-pkg.org/badges/version/datelife)](https://CRAN.R-project.org/package=datelife)-->
+[![CRAN status](https://www.r-pkg.org/badges/version/datelife)](https://CRAN.R-project.org/package=datelife)-->
 
 ![GitHub R package
 version](https://img.shields.io/github/r-package/v/phylotastic/OpenTreeChronograms?color=green&label=GitHub)
@@ -18,14 +17,15 @@ Issues](https://img.shields.io/github/issues-closed-raw/phylotastic/datelife.svg
 [![NSF-0905606](https://img.shields.io/badge/NSF-0905606-white.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=0905606)
 [![NSF-1458572](https://img.shields.io/badge/NSF-1458572-white.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1458572)
 
-# Welcome to the GitHub repository of DateLife’s Open Tree of Life Chronogram database R package!
+# Welcome to the GitHub repository of the Open Tree of Life Chronogram database R package!
 
-`OpenTreeChronograms` is an R package that was designed to work along
-the [`datelife` R package](http://phylotastic.org/datelife/index.html).
+`OpenTreeChronograms` is an R package that is intended to work with the
+[`datelife` R package](http://phylotastic.org/datelife/index.html).
 
 ## README topics:
 
 -   [Installation](#local)
+-   [Loading](#loading)
 -   [Citation](#citing)
 -   [License](#license)
 -   [Funding](#funding)
@@ -41,10 +41,10 @@ install.packages("OpenTreeChronograms")
 
 `OpenTreeChronograms`’s previous stable versions are available for
 installation from the CRAN repository. For example, to install
-`version 2022.06.13`, you can run:
+`version 2022.01.28`, you can run:
 
 ``` r
-devtools::install_version("OpenTreeChronograms", version="2022.06.13")
+devtools::install_version("OpenTreeChronograms", version="2022.01.28")
 ```
 
 You can install `OpenTreeChronograms`’s development version from its
@@ -54,10 +54,28 @@ GitHub repository with:
 devtools::install_github("phylotastic/OpenTreeChronograms")
 ```
 
+## Loading the dataset
+
+``` r
+data("opentree_chronograms", package = "OpenTreeChronograms")
+```
+
+``` r
+opentree_chronograms$version 
+```
+
+\[1\] “2022.01.28”
+
+``` r
+opentree_chronograms$update
+```
+
+\[1\] “2022-01-28 15:24:53 PST”
+
 ## Citing `OpenTreeChronograms`
 
 If you use `OpenTreeChronograms` for a publication, please cite the Open
-Tree of Life database Phylesystem, the OpenTreeChronograms R package,
+Tree of Life database Phylesystem, the `OpenTreeChronograms` R package,
 the accompanying paper, and all chronograms used.
 
 ## License

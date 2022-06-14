@@ -46,8 +46,8 @@ published chronograms currently stored in the Open Tree of Life database.}
 Life database.}
 \item{update}{A character vector indicating the time when the database object
 was last updated.}
-\item{version}{A character vector indicating the datelife package version when the
-object was last updated.}
+\item{version}{A character vector indicating when the chronogram database \code{opentree_chronograms}
+object was last updated. Format is year.month.day}
 }
 }
 \description{

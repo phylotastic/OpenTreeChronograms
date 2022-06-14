@@ -1,7 +1,7 @@
 Package: OpenTreeChronograms
 Type: Package
 Title: Open Tree of Life chronograms
-Version: 2022.06.13
+Version: 2022.01.28
 Author: c(person("Brian", "O'Meara", email = "bomeara@gmail.com", role=c("aut")),
           person("Luna L.", "Sanchez Reyes", email = "sanchez.reyes.luna@gmail.com", role=c("aut", "cre")))
 Maintainer: Luna L. Sanchez Reyes <sanchez.reyes.luna@gmail.com>

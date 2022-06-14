@@ -15,8 +15,8 @@
 #'     Life database.}
 #'   \item{update}{A character vector indicating the time when the database object
 #'     was last updated.}
-#'   \item{version}{A character vector indicating the date
-#'     when the R database was last updated from OpenTree's database.}
+#'   \item{version}{A character vector indicating when the chronogram database `opentree_chronograms`
+#'     object was last updated. Format is year.month.day}
 #' }
 #' @source \url{http://opentreeoflife.org}
 #' @keywords opentree dates myrs million years time phylogeny chronogram
@@ -25,7 +25,7 @@
 #' devtools::install_github("ropensci/rotl", ref = devtools::github_pull("137"))
 #' remotes::install_github("ROpenSci/bibtex")'
 #' opentree_chronograms <- get_opentree_chronograms()
-#' opentree_chronograms$update <- Sys.time()
+#' opentree_chronograms$update_time <- Sys.time()
 #' opentree_chronograms$version <- format(Sys.time(), "%Y.%m.%d")
 #' usethis::use_data(opentree_chronograms, overwrite = T, compress="xz")
 #' and updated with update_datelife_cache()
@@ -132,8 +132,8 @@ phylo_has_brlen <- function(phy) {
 #'     Life database.}
 #'   \item{update}{A character vector indicating the time when the database object
 #'     was last updated.}
-#'   \item{version}{A character vector indicating the datelife package version when the
-#'     object was last updated.}
+#'   \item{version}{A character vector indicating when the chronogram database `opentree_chronograms`
+#'     object was last updated. Format is year.month.day}
 #' }
 #' @export
 get_opentree_chronograms <- function(max_tree_count = "all") {
@@ -273,7 +273,7 @@ get_opentree_chronograms <- function(max_tree_count = "all") {
                  studies = studies,
                  dois = dois,
                  update = Sys.time(),
-                 version = utils::packageVersion("datelife"))
+                 version = format(Sys.time(), "%Y.%m.%d"))
   attr(result, "running_time") <- tot_time
   message(tot_time)
   return(result)
