@@ -22,8 +22,8 @@
 #' @keywords opentree dates myrs million years time phylogeny chronogram
 #' @details
 #' Generated with
-#' devtools::install_github("ropensci/rotl", ref = devtools::github_pull("137"))
-#' remotes::install_github("ROpenSci/bibtex")'
+#' `devtools::install_github("ropensci/rotl", ref = devtools::github_pull("137"))`
+#' `remotes::install_github("ROpenSci/bibtex")`
 #' opentree_chronograms <- get_opentree_chronograms()
 #' opentree_chronograms$update_time <- Sys.time()
 #' opentree_chronograms$version <- format(Sys.time(), "%Y.%m.%d")
@@ -154,7 +154,6 @@ get_opentree_chronograms <- function(max_tree_count = "all") {
   tree_count <- 0
   bad_ones <- c()
   ott_id_problems <- data.frame(study_id = character(), tree_id = character()) # nrow(fix_negative_brlen) is 0
-  # utils::opentree_chronograms
   for (study_index in sequence(dim(chronogram_matches)[1])) {
     # the only purpose for the following conditional is testing:
     if (is.numeric(max_tree_count)) {

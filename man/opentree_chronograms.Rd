@@ -31,8 +31,8 @@ Now storing >200 chronograms from Open Tree of Life
 }
 \details{
 Generated with
-devtools::install_github("ropensci/rotl", ref = devtools::github_pull("137"))
-remotes::install_github("ROpenSci/bibtex")'
+\code{devtools::install_github("ropensci/rotl", ref = devtools::github_pull("137"))}
+\code{remotes::install_github("ROpenSci/bibtex")}
 opentree_chronograms <- get_opentree_chronograms()
 opentree_chronograms$update_time <- Sys.time()
 opentree_chronograms$version <- format(Sys.time(), "\%Y.\%m.\%d")

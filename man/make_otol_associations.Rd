@@ -7,7 +7,7 @@
 make_otol_associations()
 }
 \value{
-\code{data.frame} with author last name, author first and other names, and comma delimited URLs for OToL studies
+\code{data.frame} with author last name, author first and other names, and comma delimited URLs for Open Tree of Life studies
 }
 \description{
 Associate Open Tree of Life authors with studies
