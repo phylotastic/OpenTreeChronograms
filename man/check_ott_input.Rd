@@ -18,7 +18,7 @@ A named numeric vector of valid Open Tree Taxonomy (OTT) ids.
 }
 \description{
 \verb{check_ott_input is currently used in functions }\code{\link[=get_ott_clade]{get_ott_clade()}},
-\code{\link[=get_ott_children]{get_ott_children()}}, and \code{\link[datelife:get_otol_synthetic_tree]{datelife::get_otol_synthetic_tree()}}.
+\code{\link[=get_ott_children]{get_ott_children()}}.
 }
 \details{
 By default, it uses the \code{ott_id} argument if it is not NULL.

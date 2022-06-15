@@ -51,7 +51,7 @@ clean_taxon_info_children <- function(taxon_info,
 #' Check input for other functions
 #'
 #' `check_ott_input is currently used in functions `[get_ott_clade()],
-#' [get_ott_children()], and [datelife::get_otol_synthetic_tree()].
+#' [get_ott_children()].
 #'
 #' @param input Optional. A character vector of names.
 #' @param ott_ids If not NULL, it takes this argument and ignores input. A
