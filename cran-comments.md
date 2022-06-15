@@ -39,3 +39,7 @@ These words are existing terms commonly used in evolutionary biology.
 Checking data for non-ASCII characters ... NOTE
     found 167 marked UTF-8 strings
 ```
+
+**Comments on note 2**: <br/>
+
+These are from the database object. Data is linked to author names, several of which contain special characters in UTF-8.

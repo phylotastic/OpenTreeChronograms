@@ -18,9 +18,15 @@ Issues](https://img.shields.io/github/issues-closed-raw/phylotastic/OpenTreeChro
 [![NSF-0905606](https://img.shields.io/badge/NSF-0905606-white.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=0905606)
 [![NSF-1458572](https://img.shields.io/badge/NSF-1458572-white.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1458572)
 
-# Welcome to the GitHub repository of the Open Tree of Life Chronogram database R package!
+# OpenTreeChronograms: a database of phylogenetic trees with branch lengths proportional to time
 
-`OpenTreeChronograms` is an R package that is intended to work with the
+Welcome to `OpenTreeChronograms` GitHub repository!
+
+`OpenTreeChronograms` is an R package that hosts a chronogram database
+assembled with data from the Open Tree of Life phylogenetic database,
+the [Phylesystem](https://github.com/OpenTreeOfLife/phylesystem-1).
+
+`OpenTreeChronograms` has been developed to work along with the
 [`datelife` R package](http://phylotastic.org/datelife/index.html).
 
 ## README topics:
@@ -55,7 +61,7 @@ GitHub repository with:
 devtools::install_github("phylotastic/OpenTreeChronograms")
 ```
 
-## Loading the dataset
+## Loading the database
 
 ``` r
 data("opentree_chronograms", package = "OpenTreeChronograms")
