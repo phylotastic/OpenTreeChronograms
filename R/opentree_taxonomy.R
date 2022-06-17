@@ -123,16 +123,15 @@ check_ott_input <- function(input = NULL, ott_ids = NULL) {
 #' @inheritParams check_ott_input
 #' @return A list of named numeric vectors of ott ids from input and all the clades it belongs to.
 #' @examples
-#' \dontrun{ # This is a flag for package development. You are welcome to run the example.
+#' \donttest{
 #'
 #' taxa <- c("Homo", "Bacillus anthracis", "Apis", "Salvia")
-#' lin <- get_ott_lineage(taxa)
-#' lin
+#' # lin <- get_ott_lineage(taxa)
 #'
 #' # Look up an unknown OTT id:
 #' get_ott_lineage(ott_id = 454749)
 #'
-#' } # end dontrun
+#' } # end donttest
 #' @export
 get_ott_lineage <- function(input = NULL, ott_ids = NULL) {
   # ott_ids <- c(335590, 555178, 748370, 1070795, 3942422, 907458, 472526, 820645, 31926, 756728, 605194, 490099)
@@ -349,18 +348,20 @@ get_valid_children <- function(input = NULL, ott_ids = NULL, taxonomic_source = 
 #' #  missing from the OpenTree synthetic tree.
 #' # The dog genus is not monophyletic in the OpenTree synthetic tree, so in
 #' #  practice, it has no node to extract a subtree from.
+#' # Get the Open Tree Taxonomy identifier (OTT id) for "Canis":
 #' tnrs <- tnrs_match("Canis")
 #'
-#' \dontrun{ # This is a flag for package development. You are welcome to run the example.
+#' \dontrun{
 #' rotl::tol_subtree(tnrs$ott_id[1])
 #' #> Error: HTTP failure: 400
 #' #> [/v3/tree_of_life/subtree] Error: node_id was not found (broken taxon).
+#' } # end dontrun
 #'
-#'
+#' \donttest{
 #' ids <- tnrs$ott_id[1]
 #' names(ids) <- tnrs$unique_name
 #' children <- get_ott_children(ott_ids = ids) # or
-#' children <- get_ott_children(input = "Canis")
+#' # children <- get_ott_children(input = "Canis")
 #' str(children)
 #' ids <- children$Canis$ott_id
 #' names(ids) <- rownames(children$Canis)
@@ -369,15 +370,14 @@ get_valid_children <- function(input = NULL, ott_ids = NULL, taxonomic_source = 
 #'
 #' # An example with flowering plants:
 #'
-#'
-#' oo <- get_ott_children(input = "magnoliophyta", ott_rank = "order")
+#' # orders <- get_ott_children(input = "magnoliophyta", ott_rank = "order")
 #' # Get the number of orders of flowering plants that we have
-#' sum(oo$Magnoliophyta$rank == "order")
+#' # sum(orders$Magnoliophyta$rank == "order")
 #'
-#' } # end dontrun
+#' } # end donttest
 #' @export
 # children <- get_ott_children(input = "Fringillidae")
-# rotl::tol_subtree(ott_id = 839319) #broken taxa
+# rotl::tol_subtree(ott_id = 839319) # broken taxa
 # children <- get_ott_children(input = "Cetaceae")
 # nrow(children[[1]])
 # sum(children[[1]]$rank == "species")

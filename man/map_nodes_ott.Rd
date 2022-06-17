@@ -16,7 +16,7 @@ A \code{phylo} object with "nodelabels".
 Add Open Tree of Life Taxonomy to tree nodes.
 }
 \examples{
-\dontrun{ # This is a flag for package development. You are welcome to run the example.
+\dontrun{
 
 # Load the Open Tree chronograms database cached in datelife:
 utils::data(opentree_chronograms)
@@ -32,5 +32,5 @@ library(ape)
 plot(phy)
 nodelabels(phy$node.label)
 
-} #end dontrun
+} # end dontrun
 }

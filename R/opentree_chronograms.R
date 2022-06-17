@@ -418,7 +418,7 @@ clean_ott_chronogram <- function(phy) {
 #' @param tree A tree either as a newick character string or as a `phylo` object.
 #' @return A `phylo` object with "nodelabels".
 #' @examples
-#' \dontrun{ # This is a flag for package development. You are welcome to run the example.
+#' \dontrun{
 #'
 #' # Load the Open Tree chronograms database cached in datelife:
 #' utils::data(opentree_chronograms)
@@ -434,7 +434,7 @@ clean_ott_chronogram <- function(phy) {
 #' plot(phy)
 #' nodelabels(phy$node.label)
 #'
-#' } #end dontrun
+#' } # end dontrun
 #' @export
 map_nodes_ott <- function(tree) {
   # utils::data(opentree_chronograms)

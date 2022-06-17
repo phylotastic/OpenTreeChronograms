@@ -32,18 +32,20 @@ you still need to get all species or an induced OpenTree subtree
 #  missing from the OpenTree synthetic tree.
 # The dog genus is not monophyletic in the OpenTree synthetic tree, so in
 #  practice, it has no node to extract a subtree from.
+# Get the Open Tree Taxonomy identifier (OTT id) for "Canis":
 tnrs <- tnrs_match("Canis")
 
-\dontrun{ # This is a flag for package development. You are welcome to run the example.
+\dontrun{
 rotl::tol_subtree(tnrs$ott_id[1])
 #> Error: HTTP failure: 400
 #> [/v3/tree_of_life/subtree] Error: node_id was not found (broken taxon).
+} # end dontrun
 
-
+\donttest{
 ids <- tnrs$ott_id[1]
 names(ids) <- tnrs$unique_name
 children <- get_ott_children(ott_ids = ids) # or
-children <- get_ott_children(input = "Canis")
+# children <- get_ott_children(input = "Canis")
 str(children)
 ids <- children$Canis$ott_id
 names(ids) <- rownames(children$Canis)
@@ -52,10 +54,9 @@ plot(tree_children, cex = 0.3)
 
 # An example with flowering plants:
 
-
-oo <- get_ott_children(input = "magnoliophyta", ott_rank = "order")
+# orders <- get_ott_children(input = "magnoliophyta", ott_rank = "order")
 # Get the number of orders of flowering plants that we have
-sum(oo$Magnoliophyta$rank == "order")
+# sum(orders$Magnoliophyta$rank == "order")
 
-} # end dontrun
+} # end donttest
 }

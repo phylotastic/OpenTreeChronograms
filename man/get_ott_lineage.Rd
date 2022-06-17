@@ -22,14 +22,13 @@ Get the Open Tree of Life Taxonomic identifier (OTT id) and name of all lineages
 from one or more input taxa.
 }
 \examples{
-\dontrun{ # This is a flag for package development. You are welcome to run the example.
+\donttest{
 
 taxa <- c("Homo", "Bacillus anthracis", "Apis", "Salvia")
-lin <- get_ott_lineage(taxa)
-lin
+# lin <- get_ott_lineage(taxa)
 
 # Look up an unknown OTT id:
 get_ott_lineage(ott_id = 454749)
 
-} # end dontrun
+} # end donttest
 }

@@ -136,7 +136,7 @@ classification_paths_from_taxonomy <- function(taxa, sources = "Catalogue of Lif
 #' @param collapse_singles If true, collapses singleton nodes
 #' @return A list containing a phylo object with resolved names and a vector with unresolved names
 #' @examples
-#' \dontrun{ # This is a flag for package development. You are welcome to run the example.
+#' \donttest{
 #'
 #' taxa <- c(
 #'   "Homo sapiens", "Ursus arctos", "Pan paniscus", "Tyrannosaurus rex",
@@ -149,7 +149,7 @@ classification_paths_from_taxonomy <- function(taxa, sources = "Catalogue of Lif
 #' # got rid of singles, but this also removes a lot of the node.labels
 # tree_from_taxonomy(taxa = c("Felis", "pan", "ursus"), sources = "Open Tree of Life Reference Taxonomy") # this is not working for some reason
 # tree_from_taxonomy(taxa = c("Felis", "pan", "ursus"), sources = "NCBI")
-#' } # end dontrun
+#' } # end donttest
 #' @export
 tree_from_taxonomy <- function(taxa, sources = "Catalogue of Life", collapse_singles = TRUE) {
   # taxa <- tax_dqall[[7]]$cleaned_names # Primates spp
@@ -292,7 +292,7 @@ summarize_fossil_range <- function(taxon, recent = FALSE, assume_recent_if_missi
 #' @return A dated tree.
 #' @export
 #' @examples
-#' \dontrun{ # This is a flag for package development. You are welcome to run the example.
+#' \donttest{
 #'
 #' taxa <- c(
 #'   "Archaeopteryx", "Pinus", "Quetzalcoatlus", "Homo sapiens",
@@ -303,7 +303,7 @@ summarize_fossil_range <- function(taxon, recent = FALSE, assume_recent_if_missi
 # #' chronogram <- date_with_pbdb(phy)
 # #' ape::plot.phylo(chronogram)
 # #' ape::axisPhylo()
-#' } # end dontrun
+#' } # end donttest
 date_with_pbdb <- function(phy, recent = FALSE, assume_recent_if_missing = TRUE) {
   all_dates <- as.data.frame(t(sapply(phy$tip.label, summarize_fossil_range, recent = recent, assume_recent_if_missing = assume_recent_if_missing)))
   all_dates$max_ma <- as.numeric(all_dates$max_ma)
