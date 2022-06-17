@@ -1,5 +1,7 @@
 ## New submission v 2022.01.28
-This is the first submission of this package. It contains an evolutionary database and functions developed to create it. 
+This is a new submission where I have addressed reviewer Gregor Seyer comment on appropriate usage of dontrun.
+
+Accordingly, I have removed usage of dontrun from examples that can be run.
 
 ### Test environments:
 
@@ -11,7 +13,7 @@ This is the first submission of this package. It contains an evolutionary databa
   - R 4.2.0 (2022-04-22 ucrt), `devtools::check_win_release()` and GitHub action
   - R 4.1.3 (2022-03-10), `devtools::check_win_oldrelease()` and GitHub action
   - R Under development (2022-06-13 r82481 ucrt), `devtools::check_win_devel()`
-- Linux, Platform: x86_64-pc-linux-gnu (64-bit), 
+- Linux, Platform: x86_64-pc-linux-gnu (64-bit),
   - Ubuntu 20.04.4, Ubuntu 18.04.6
     - R 4.2.0 release
     - R Under development (unstable) (2022-06-13 r82481)
