@@ -14,6 +14,8 @@ Depends:
     R (>= 2.10)
 RoxygenNote: 7.1.2
 Roxygen: list(markdown = TRUE)
+URL: https://github.com/phylotastic/OpenTreeChronograms
+BugReports: https://github.com/phylotastic/OpenTreeChronograms/issues
 Imports:
     ape,
     geiger,
